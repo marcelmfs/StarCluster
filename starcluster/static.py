@@ -110,6 +110,7 @@ VOLUME_ATTACH_STATUS = ['attaching', 'attached', 'detaching', 'detached']
 
 INSTANCE_TYPES = {
     't1.micro': ['i386', 'x86_64'],
+    't2.nano': ['i386', 'x86_64'],
     't2.micro': ['i386', 'x86_64'],
     't2.small': ['i386', 'x86_64'],
     't2.medium': ['i386', 'x86_64'],
@@ -126,7 +127,12 @@ INSTANCE_TYPES = {
     'm3.large': ['x86_64'],
     'm3.xlarge': ['x86_64'],
     'm3.2xlarge': ['x86_64'],
+    'm4.large': ['x86_64'],
+    'm4.xlarge': ['x86_64'],
+    'm4.2xlarge': ['x86_64'],
+    'm4.4xlarge': ['x86_64'],
     'm4.10xlarge': ['x86_64'],
+    'm4.16xlarge': ['x86_64'],
     'r3.large': ['x86_64'],
     'r3.xlarge': ['x86_64'],
     'r3.2xlarge': ['x86_64'],
@@ -162,7 +168,7 @@ INSTANCE_TYPES = {
 
 T1_INSTANCE_TYPES = ['t1.micro']
 
-T2_INSTANCE_TYPES = ['t2.micro', 't2.small', 't2.medium']
+T2_INSTANCE_TYPES = ['t2.nano', 't2.micro', 't2.small', 't2.medium']
 
 SEC_GEN_TYPES = ['m3.medium', 'm3.large', 'm3.xlarge', 'm3.2xlarge']
 
@@ -183,7 +189,8 @@ M3_COMPUTE_TYPES = ['c3.large', 'c3.xlarge', 'c3.2xlarge', 'c3.4xlarge',
                     'c3.8xlarge']
 
 M4_COMPUTE_TYPES = ['c4.large', 'c4.xlarge', 'c4.2xlarge', 'c4.4xlarge',
-                    'c4.8xlarge', 'm4.10xlarge']
+                    'c4.8xlarge', 'm4.large', 'm4.xlarge', 'm4.2xlarge',
+                    'm4.4xlarge', 'm4.10xlarge', 'm4.16xlarge']
 
 I2_STORAGE_TYPES = ['i2.xlarge', 'i2.2xlarge', 'i2.4xlarge', 'i2.8xlarge']
 
